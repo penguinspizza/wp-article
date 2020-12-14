@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+/*全体設定*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  background: rgb(237, 237, 232);
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+/*END全体設定*/
+
+/*header*/
+
+/*mv*/
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1em;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 4px #4e4e4e;
+  width: 100%;
+  height: 30vh;
+  background: url("../img/00_PP41_PP_TP_V.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 span {
+  background: linear-gradient(transparent 50%, rgb(76, 146, 226) 50%);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 34px;
+  }
+
+  @media screen and (max-height: 1023px) {
+    h1 {
+      height: 30vw;
+      font-size: 46px;
+    }
+  }
+}
+
+/*ENDmv*/
+
+/*advent*/
+
+.advent {
+  width: 90%;
+  margin: 20px auto;
+  padding: 1em;
+  background: rgb(226, 120, 109);
+  border-radius: 10px;
+}
+
+.advent p {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.advent p strong {
+  font-weight: 900;
+}
+
+.advent p a {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 768px) {
+  .advent {
+    width: 650px;
+  }
+
+  .advent p {
+    font-size: 18px;
+  }
+}
+
+/*ENDadvent*/
+
+/*hello*/
+
+.hello {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hello p {
+  font-size: 16px;
+  color: rgb(90, 90, 75);
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .hello {
+    width: 650px;
+  }
+
+  .hello p {
+    font-size: 18px;
+  }
+}
+
+/*ENDhello*/
+
+/*目次*/
+
+.list {
+  width: 90%;
+  margin: 20px auto;
+  background: rgb(255, 255, 255);
+}
+
+.list h2 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0.5em;
+  background: rgb(76, 146, 226);
+}
+
+.list ul {
+  list-style: none;
+}
+
+.list ul li {
+  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  border-bottom: 1px dotted rgb(90, 90, 75);
+}
+
+.list ul li:last-child {
+  border-bottom: none;
+}
+
+.list ul li a {
+  color: rgb(90, 90, 75);
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    width: 650px;
+  }
+
+  .list h2 {
+    font-size: 22px;
+  }
+
+  .list ul li {
+    font-size: 18px;
+  }
+}
+
+/*END目次*/
+
+/*ENDheader*/
+
+/*main article*/
+
+article div:nth-child(odd) {
+  background: rgb(248, 248, 248);
+}
+
+article div section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+article div section p {
+  font-size: 16px;
+  color: rgb(90, 90, 75);
+  margin-top: 1em;
+}
+
+article div section p strong {
+  font-weight: 900;
+}
+
+article div section p a {
+  color: rgb(90, 90, 75);
+}
+
+#omoro {
+  background: url("../img/max16011524-2_TP_V.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#muzu {
+  background: url("../img/green_floppy20141024222628_TP_V.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#osusume {
+  background: url("../img/max16011518-2_TP_V.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#hon {
+  background: url("../img/max16011508-3_TP_V.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#matome {
+  background: url("../img/MAX98_hitoriburanko20140531_TP_V.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.title-img {
+  width: 100%;
+  height: 30vh;
+}
+
+.title-img h3 {
+  font-size: 20px;
+  font-weight: 900;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(76, 146, 226);
+  text-shadow: 0px 0px 5px #ffffff;
+}
+
+.title-img h3 span {
+  padding: 0.5em;
+  border: 2px solid rgb(76, 146, 226);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  article div section {
+    width: 650px;
+  }
+
+  article div section p {
+    font-size: 18px;
+  }
+
+  .title-img h3 {
+    font-size: 28px;
+  }
+
+  .title-img h3 span {
+    border: 3px solid rgb(76, 146, 226)
+  }
+
+  @media screen and (max-height: 1023px) {
+    .title-img {
+      height: 30vw;
+    }
+  }
+}
+
+/*ENDmain article*/
+
+/*footer*/
+
+footer {
+  width: 100%;
+  background: rgb(76, 146, 226);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer h5 {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  padding: 10px;
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 10px;
+}
+
+footer small {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*ENDfooter*/
